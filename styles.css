@@ -280,6 +280,11 @@ background-color: var(--color-green);
   transform: rotate(5deg);
 }
 
+.constant-shake{
+  display: inline-block;
+  animation: titret 0.3s infinite ease-in-out;
+}
+
 .sustainability{
   display: inline-block;
   background-color: var(--color-mustard);
