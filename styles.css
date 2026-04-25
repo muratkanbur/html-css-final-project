@@ -215,11 +215,15 @@ nav {
   100% { transform: rotate(0deg); }
 }
 
-.about-us{
-  display: inline-block;
-  background-color: var(--color-yellow);
+.footer-list a {
+  display: inline-block; /* Artık tek tek yazmana gerek kalmadı */
   padding: 5px;
   border-radius: 3px;
+  transition: transform 0.2s ease; /* Hover efekti için buraya bir kez yazman yeterli */
+}
+
+.about-us{
+  background-color: var(--color-yellow);
   transform: rotate(-5deg);
 }
 
@@ -230,76 +234,50 @@ nav {
 }
 
 .contact-us{
-  display: inline-block;
   background-color: var(--color-grey);
-  padding: 5px;
-  border-radius: 3px;
   transform: rotate(7deg);
 }
 
 .our-stores{
-  display: inline-block;
 background-color: var(--color-blue);
-  padding: 5px;
-  border-radius: 3px;
   transform: rotate(-2deg);
 }
 
 .careers{
-  display: inline-block;
   background-color: var(--color-red-4);
-  padding: 5px;
-  border-radius: 3px;
   transform: rotate(-2deg);
   color: var(--color-white);
 }
 
 .blog{
   background-color: var(--color-dark-blue);
-  padding: 5px;
-  border-radius: 3px;
   color: var(--color-white);
 }
 
 .shipping{
-  display: inline-block;
   background-color: var(--color-white);
-  padding: 5px;
-  border-radius: 3px;
   transform: rotate(-5deg);}
 
   .faqs{
   background-color: var(--color-orange);
-  padding: 5px;
-  border-radius: 3px;
 }
 
 .join-us{
-  display: inline-block;
 background-color: var(--color-green);
-  padding: 5px;
-  border-radius: 3px;
   transform: rotate(5deg);
 }
 
 .constant-shake{
-  display: inline-block;
   animation: titret 0.3s infinite ease-in-out;
 }
 
 .sustainability{
-  display: inline-block;
   background-color: var(--color-mustard);
-  padding: 5px;
-  border-radius: 3px;
   transform: rotate(-3deg);
 }
 
 .wholesale-enquiries{
-  display: inline-block;
   background-color: var(--color-dark-green);
-  padding: 5px;
-  border-radius: 3px;
   transform: rotate(2deg);
   color: var(--color-white);
 } 
