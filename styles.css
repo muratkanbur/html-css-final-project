@@ -31,34 +31,27 @@ img {
 
 :root {
   /*  Color */
-  --color-red-1: #610404;
-  --color-red-2: #780a0a;
-  --color-red-3: #911111;
-  --color-red-4: #a61b1b;
-  --color-red-5: #a61b1b;
-  --color-red-6: #d64545;
-  --color-red-7: #e66a6a;
   --color-red-8: #f29b9b;
   --color-red-9: #facdcd;
-  --color-red-10: #ffeeee;
   --color-white: #ffffff;
   --color-black: #000000;
+  --color-yellow: #f9e79f;
+  --color-blue: #85c1e9;
+  --color-green: #82e0aa;
+  --color-grey: #d5dbdb;
+  --color-orange: #cb584b;
+  --color-red-4: #9e3429;
+  --color-dark-blue: #1a5d89; 
+  --color-mustard: #d4ac0d;
+  --color-dark-green: #145214;  
 
   /* Font size */
   --font-small: 14px;
   --font-medium: 16px;
-  --font-large: 18px;
-  --font-xlarge: 20px;
-  --font-xxlarge: 24px;
-  --font-xxxlarge: 32px;
 
   /* Font weight */
   --font-weight-small: 400;
   --font-weight-medium: 500;
-  --font-weight-large: 600;
-  --font-weight-xlarge: 700;
-  --font-weight-xxlarge: 800;
-  --font-weight-xxxlarge: 900;
 }
 
 /* Tablets
@@ -213,3 +206,63 @@ nav {
   gap: 20px 50px;
   justify-content:space-around;
 }
+
+.about-us{
+  background-color: var(--color-yellow);
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.our-stores{
+background-color: var(--color-blue);
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.join-us{
+background-color: var(--color-green);
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.contact-us{
+  background-color: var(--color-grey);
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.sustainability{
+  background-color: var(--color-mustard);
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.careers{
+  background-color: var(--color-red-4);
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.blog{
+  background-color: var(--color-dark-blue);
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.faqs{
+  background-color: var(--color-orange);
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.wholesale-enquiries{
+  background-color: var(--color-dark-green);
+  padding: 5px;
+  border-radius: 3px;
+} 
+
+.shipping{
+  background-color: var(--color-white);
+  padding: 5px;
+  border-radius: 3px;
+  }
