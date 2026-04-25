@@ -1,0 +1,187 @@
+/* Mobile devices (standard CSS) */
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+body {
+  margin: 0 10px 0 10px;
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+:root {
+  /*  Color */
+  --color-red-1: #610404;
+  --color-red-2: #780a0a;
+  --color-red-3: #911111;
+  --color-red-4: #a61b1b;
+  --color-red-5: #a61b1b;
+  --color-red-6: #d64545;
+  --color-red-7: #e66a6a;
+  --color-red-8: #f29b9b;
+  --color-red-9: #facdcd;
+  --color-red-10: #ffeeee;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Font size */
+  --font-small: 14px;
+  --font-medium: 16px;
+  --font-large: 18px;
+  --font-xlarge: 20px;
+  --font-xxlarge: 24px;
+  --font-xxxlarge: 32px;
+
+  /* Font weight */
+  --font-weight-small: 400;
+  --font-weight-medium: 500;
+  --font-weight-large: 600;
+  --font-weight-xlarge: 700;
+  --font-weight-xxlarge: 800;
+  --font-weight-xxxlarge: 900;
+}
+
+/* Tablets
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+
+Laptops and larger screens 
+@media all and (min-width: 1024px) {
+
+}
+*/
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px;
+  background-color: var(--color-white);
+}
+
+.nav-search-icon{
+  width: 10px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nav-hamburger-icon, .nav-basket-icon, .nav-profile-icon {
+  width: 30px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nav-logo-icon {
+   width: 50px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nav-search {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: none;
+}
+
+.profile-list {
+  display: flex;
+  gap: 10px;
+}
+
+
+.slider {
+    width: 100%;
+    margin: 10px auto;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    position: relative; 
+}
+
+.slider-track {
+    display: flex;
+    width: 400%; 
+    animation: slideShow 15s infinite ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+/* Animasyon: 3 görsel için geçişler */
+@keyframes slideShow {
+    0% { transform: translateX(0); }
+    30% { transform: translateX(0); }       /* 1. Görsel bekleme */
+    33% { transform: translateX(-25%); }    /* 2. Görsele geçiş */
+    63% { transform: translateX(-25%); }    /* 2. Görsel bekleme */
+    66% { transform: translateX(-50%); }    /* 3. Görsele geçiş */
+    96% { transform: translateX(-50%); }    /* 3. Görsel bekleme */
+    100% { transform: translateX(-75%); }   /* Başa dönmek için kopya */
+}
+
+/* Mobil İnce Ayar */
+@media (max-width: 768px) {
+    .search-form { width: 90%; }
+    .slider { aspect-ratio: 4 / 3; } /* Mobilde daha dikey bir banner */
+}
+
+
+.categories{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:10px;
+}
+
+.fabric{
+  display: flex;
+  flex-direction: column;
+}
+
+.btn{
+  background-color: var(--color-red-9);
+  border: 1px solid var(--color-black);
+  padding: 10px 10px;
+  border-radius: 4px;
+  font-size: var(--font-medium);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-black);
+}

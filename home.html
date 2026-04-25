@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zarif Kumash</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="./md.css"
+      media="all and (min-width: 768px) and (max-width: 1023.98px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./lg.css"
+      media="all and (min-width: 1024px)"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- 
+    
+    mobile:
+    search 
+    hamburger
+    desktropmenu - hidden
+    logo
+    login signup
+    
+    tablet:
+    search 
+    hamburger
+    desktropmenu - hidden
+    logo
+    login signup
+
+    desktop:
+    search
+    hamburger - hidden
+    desktropmenu 2
+    logo 1
+     login signup 3
+    
+    -->
+  <header>
+    <nav>
+      <div class="nav-search">
+        <form action="" method="GET">
+          <input
+            type="text"
+            placeholder="Search..."
+            name="search"
+            aria-label="search"
+          />
+          <button type="submit">
+            <img
+              class="nav-search-icon"
+              src="./assets/icons/search_icon.svg"
+              alt="Search"
+            />
+          </button>
+        </form>
+      </div>
+      <div class="nav-bottom">
+        <button class="nav-hamburger" aria-label="hamburger icon">
+          <img
+            class="nav-hamburger-icon"
+            src="./assets/icons/hamburger-icon.svg"
+            alt="hamburger icon"
+            aria-hidden="true"
+          />
+        </button>
+        <a class="nav-logo" href="home.html">
+          <img
+            class="nav-logo-icon"
+            src="./assets/zarif-logo.svg"
+            alt="Zarif Kumash logo"
+          />
+        </a>
+        <ul class="nav-list">
+          <li><a href="cotton.html">Cotton</a></li>
+          <li><a href="denim.html">Denim</a></li>
+          <li><a href="embroidery.html">Embroidery</a></li>
+          <li><a href="quilted.html">Quilted</a></li>
+          <li><a href="linen.html">Linen</a></li>
+          <li><a href="muslin.html">Muslin</a></li>
+          <li><a href="poplin.html">Poplin</a></li>
+          <li><a href="viscose.html">Viscose</a></li>
+        </ul>
+        <div class="profile-list">
+          <a href=""
+            ><img
+              class="nav-basket-icon"
+              src="./assets/icons/basket-icon.svg"
+              alt="Basket"
+          /></a>
+          <a href=""
+            ><img
+              class="nav-profile-icon"
+              src="./assets/icons/profile-icon.svg"
+              alt="Profile"
+          /></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <section class="slider">
+      <div class="slider-track">
+        <div class="slide">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="./assets/banners/muslin-banner1-lg.webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./assets/banners/muslin-banner1-md.webp"
+            />
+            <img
+              src="./assets/banners/muslin-banner1-sm.webp"
+              alt="Banner 1"
+              decoding="async"
+            />
+          </picture>
+        </div>
+
+        <div class="slide">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="./assets/banners/haberdashery-banner2-lg.webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./assets/banners/haberdashery-banner2-md.webp"
+            />
+            <img
+              src="./assets/banners/haberdashery-banner2-sm.webp"
+              alt="Banner 2"
+              decoding="async"
+            />
+          </picture>
+        </div>
+
+        <div class="slide">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="./assets/banners/dressfabric-banner3-lg.webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./assets/banners/dressfabric-banner3-md.webp"
+            />
+            <img
+              src="./assets/banners/dressfabric-banner3-sm.webp"
+              alt="Banner 3"
+              decoding="async"
+            />
+          </picture>
+        </div>
+
+        <div class="slide">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="./assets/banners/muslin-banner1-lg.webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./assets/banners/muslin-banner1-md.webp"
+            />
+            <img
+              src="./assets/banners/muslin-banner1-sm.webp"
+              alt="Banner 1"
+              decoding="async"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <picture class="fabric">
+        <source
+          media="(min-width: 1024px)"
+          srcset="./assets/categories/cottonfabric-lg.webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./assets/categories/cottonfabric-md.webp"
+        />
+        <img
+          src="./assets/categories/cottonfabric-sm.webp"
+          alt="cotton fabric"
+          loading="lazy"
+          decoding="async"
+        />
+        <button class="btn">Cotton Fabric</button>
+      </picture>
+
+      <picture class="fabric">
+        <source
+          media="(min-width: 1024px)"
+          srcset="./assets/categories/denimfabric-lg.webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./assets/categories/denimfabric-md.webp"
+        />
+        <img
+          src="./assets/categories/denimfabric-sm.webp"
+          alt="denim fabric"
+          loading="lazy"
+          decoding="async"
+        />
+        <button class="btn">Denim Fabric</button>
+      </picture>
+
+      <picture class="fabric">
+        <source
+          media="(min-width: 1024px)"
+          srcset="./assets/categories/embroideryfabric-lg.webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./assets/categories/embroideryfabric-md.webp"
+        />
+        <img
+          src="./assets/categories/embroideryfabric-sm.webp"
+          alt="embroidered fabric"
+          loading="lazy"
+          decoding="async"
+        />
+        <button class="btn">Embroidery Fabric</button>
+      </picture>
+
+      <picture class="fabric">
+        <source
+          media="(min-width: 1024px)"
+          srcset="./assets/categories/linenfabric-lg.webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./assets/categories/linenfabric-md.webp"
+        />
+        <img
+          src="./assets/categories/linenfabric-sm.webp"
+          alt="linen fabric"
+          loading="lazy"
+          decoding="async"
+        />
+        <button class="btn">Linen Fabric</button>
+      </picture>
+
+      <picture class="fabric">
+        <source
+          media="(min-width: 1024px)"
+          srcset="./assets/categories/muslinfabric-lg.webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./assets/categories/muslinfabric-md.webp"
+        />
+        <img
+          src="./assets/categories/muslinfabric-sm.webp"
+          alt="muslin fabric"
+          loading="lazy"
+          decoding="async"
+        />
+        <button class="btn">Muslin Fabric</button>
+      </picture>
+
+      <picture class="fabric">
+        <source
+          media="(min-width: 1024px)"
+          srcset="./assets/categories/poplinfabric-lg.webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./assets/categories/poplinfabric-md.webp"
+        />
+        <img
+          src="./assets/categories/poplinfabric-sm.webp"
+          alt="poplin fabric"
+          loading="lazy"
+          decoding="async"
+        />
+        <button class="btn">Poplin Fabric</button>
+      </picture>
+
+      <picture class="fabric">
+        <source
+          media="(min-width: 1024px)"
+          srcset="./assets/categories/quiltedfabric-lg.webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./assets/categories/quiltedfabric-md.webp"
+        />
+        <img
+          src="./assets/categories/quiltedfabric-sm.webp"
+          alt="quilted fabric"
+          loading="lazy"
+          decoding="async"
+        />
+        <button class="btn">Quilted Fabric</button>
+      </picture>
+
+      <picture class="fabric">
+        <source
+          media="(min-width: 1024px)"
+          srcset="./assets/categories/viscosefabric-lg.webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./assets/categories/viscosefabric-md.webp"
+        />
+        <img
+          src="./assets/categories/viscosefabric-sm.webp"
+          alt="viscose fabric"
+          loading="lazy"
+          decoding="async"
+        />
+        <button class="btn">Viscose Fabric</button>
+      </picture>
+    </section>
+  </body>
+</html>
