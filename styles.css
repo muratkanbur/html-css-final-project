@@ -251,12 +251,14 @@ background-color: var(--color-blue);
   padding: 5px;
   border-radius: 3px;
   transform: rotate(-2deg);
+  color: var(--color-white);
 }
 
 .blog{
   background-color: var(--color-dark-blue);
   padding: 5px;
   border-radius: 3px;
+  color: var(--color-white);
 }
 
 .shipping{
@@ -299,5 +301,6 @@ background-color: var(--color-green);
   padding: 5px;
   border-radius: 3px;
   transform: rotate(2deg);
+  color: var(--color-white);
 } 
 
