@@ -207,40 +207,50 @@ nav {
   justify-content:space-around;
 }
 
+@keyframes titret {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(3deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-3deg); }
+  100% { transform: rotate(0deg); }
+}
+
 .about-us{
+  display: inline-block;
   background-color: var(--color-yellow);
   padding: 5px;
   border-radius: 3px;
+  transform: rotate(-5deg);
 }
 
-.our-stores{
-background-color: var(--color-blue);
-  padding: 5px;
-  border-radius: 3px;
-}
-
-.join-us{
-background-color: var(--color-green);
-  padding: 5px;
-  border-radius: 3px;
+.about-us:hover, .contact-us:hover, .our-stores:hover, .careers:hover, .blog:hover, .shipping:hover, .faqs:hover, .join-us:hover, .sustainability:hover, .wholesale-enquiries:hover {
+  animation: titret 0.2s infinite;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .contact-us{
+  display: inline-block;
   background-color: var(--color-grey);
   padding: 5px;
   border-radius: 3px;
+  transform: rotate(7deg);
 }
 
-.sustainability{
-  background-color: var(--color-mustard);
+.our-stores{
+  display: inline-block;
+background-color: var(--color-blue);
   padding: 5px;
   border-radius: 3px;
+  transform: rotate(-2deg);
 }
 
 .careers{
+  display: inline-block;
   background-color: var(--color-red-4);
   padding: 5px;
   border-radius: 3px;
+  transform: rotate(-2deg);
 }
 
 .blog{
@@ -249,20 +259,40 @@ background-color: var(--color-green);
   border-radius: 3px;
 }
 
-.faqs{
+.shipping{
+  display: inline-block;
+  background-color: var(--color-white);
+  padding: 5px;
+  border-radius: 3px;
+  transform: rotate(-5deg);}
+
+  .faqs{
   background-color: var(--color-orange);
   padding: 5px;
   border-radius: 3px;
 }
 
+.join-us{
+  display: inline-block;
+background-color: var(--color-green);
+  padding: 5px;
+  border-radius: 3px;
+  transform: rotate(5deg);
+}
+
+.sustainability{
+  display: inline-block;
+  background-color: var(--color-mustard);
+  padding: 5px;
+  border-radius: 3px;
+  transform: rotate(-3deg);
+}
+
 .wholesale-enquiries{
+  display: inline-block;
   background-color: var(--color-dark-green);
   padding: 5px;
   border-radius: 3px;
+  transform: rotate(2deg);
 } 
 
-.shipping{
-  background-color: var(--color-white);
-  padding: 5px;
-  border-radius: 3px;
-  }
